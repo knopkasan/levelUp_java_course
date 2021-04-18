@@ -1,21 +1,21 @@
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ù²â×øÿÿÿÿ8¯¯ÁÍŒ/
-T	java:S106"9Replace this use of System.out or System.err by a logger.(¢ÿÕE8ªÓ÷ÍŒ/
-U	java:S106#"9Replace this use of System.out or System.err by a logger.(«ğÛÊ8‹âêÍŒ/
-Z	java:S106-"9Replace this use of System.out or System.err by a logger.(Š©®‚ıÿÿÿÿ8Ï©ìÍŒ/
 Z	java:S106/"9Replace this use of System.out or System.err by a logger.(ıÄ®øüÿÿÿÿ8Ï©ìÍŒ/
-U	java:S1063"9Replace this use of System.out or System.err by a logger.(»ÍÖÔ8Ï©ìÍŒ/
-R
-java:S1191"5Use classes from the Java API instead of Sun classes.(ÓÒÒÃ8ªÓ÷ÍŒ/
-Q
-java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8šöÂÍŒ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(üˆßµ8ºÛÀÍŒ/
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(ıÊ´õÿÿÿÿÿ8Ï©ìÍŒ/
 k
 java:S1128"NRemove this unused import 'com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput'.(ÓÒÒÃ8ªÓ÷ÍŒ/
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(»ÍÖÔ8Ï©ìÍŒ/
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(«ğÛÊ8‹âêÍŒ/
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(Š©®‚ıÿÿÿÿ8Ï©ìÍŒ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ù²â×øÿÿÿÿ8¯¯ÁÍŒ/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¢ÿÕE8ªÓ÷ÍŒ/
 Z	java:S106%"9Replace this use of System.out or System.err by a logger.(İ»êİüÿÿÿÿ8‹âêÍŒ/
-Z	java:S1061"9Replace this use of System.out or System.err by a logger.(ıÊ´õÿÿÿÿÿ8Ï©ìÍŒ/
-Z	java:S106("9Replace this use of System.out or System.err by a logger.(ã…òŞıÿÿÿÿ8‹âêÍŒ/
-U	java:S106!"9Replace this use of System.out or System.err by a logger.(’Úø¹8‹âêÍŒ/
-Z	java:S106E"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ8‹âêÍŒ/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(üˆßµ8ºÛÀÍŒ/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(åĞòŞûÿÿÿÿ8šöÂÍŒ/
+Q
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8šöÂÍŒ/
 Z	java:S106"9Replace this use of System.out or System.err by a logger.(şŸªşÿÿÿÿ8Ø«¿ÍŒ/
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(’Úø¹8‹âêÍŒ/
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(ã…òŞıÿÿÿÿ8‹âêÍŒ/
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ8‹âêÍŒ/
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(ÓÒÒÃ8ªÓ÷ÍŒ/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(åĞòŞûÿÿÿÿ8šöÂÍŒ/

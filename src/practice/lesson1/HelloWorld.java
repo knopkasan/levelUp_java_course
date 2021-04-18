@@ -1,4 +1,4 @@
-package practice;
+package practice.lesson1;
 
 public class HelloWorld {
     //Точка входа
