@@ -1,4 +1,4 @@
-package homework;
+package ru.levelup.lesson2;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -143,7 +143,7 @@ public class HW2 {
 
         //6. Создайте программу, выводящую на экран все четырёхзначные числа
         // последовательности 1000 1003 1006 1009 1012 1015 ….
-        for (int i = 1000; i <= 10000; i = i + 3) {
+        for (int i = 1000; i <= 10000; i += 3) {
             System.out.println(i);
         }
 
@@ -158,7 +158,7 @@ public class HW2 {
 
         //8. Создайте программу, выводящую на экран все неотрицательные
         // элементы последовательности 90 85 80 75 70 65 60 ….
-        for (int i = 90; i >= 0; i = i - 5) {
+        for (int i = 90; i >= 0; i -= 5) {
             System.out.println(i);
         }
 

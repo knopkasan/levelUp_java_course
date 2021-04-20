@@ -1,4 +1,4 @@
-package practice.lesson2;
+package ru.levelup.lesson2;
 
 import java.util.Random;
 import java.util.Scanner;

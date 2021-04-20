@@ -1,8 +1,5 @@
-package homework;
+package ru.levelup.lesson1;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HW1 {

@@ -1,4 +1,4 @@
-package practice.lesson1;
+package ru.levelup.lesson1;
 
 public class HelloWorld {
     //Точка входа
