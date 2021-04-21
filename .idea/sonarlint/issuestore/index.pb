@@ -1,21 +1,27 @@
 
 G
 levelUp_java_course.iml,b\4\b4a6ba2bbf683bc8f70d2087c57d9b7cd13b43e4
-E
-src/homework/HW1.java,9\b\9b589dc4997eaa09e22b65a3defcea9c84c5d675
-U
-%src/practice/lesson2/GuessNumber.java,5\0\50c4cbd72832484527b058990892fe467ad45a17
-T
-$src/practice/lesson1/HelloWorld.java,e\d\ed7cb572e88edb8e019425b3d95ad0998fe8306e
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-E
-src/homework/HW2.java,f\9\f9838bd874eb295fe0903a9ad973d65c0f865346
-N
-src/practice/lesson2/Loop.java,2\c\2c1415d432e26f72b6b54d4294ebf6387e23b320
-P
- src/practice/lesson2/Arrays.java,8\5\85db202e6790ae2af34d1f745a152830f582f645
+R
+"src/ru/levelup/lesson2/Arrays.java,8\7\877ce0896b02c718d8c16bef479ef4a83e4bd8c2
+W
+'src/ru/levelup/lesson2/GuessNumber.java,0\4\044bd9755be0cb397e54b4064b51e5e266e18b68
+V
+&src/ru/levelup/lesson1/HelloWorld.java,8\6\86d66834d337ee4c57829687c4884dd7a80282f8
 O
-src/practice/lesson3/Point.java,4\b\4bccf5843267262f67e135966859e7f2e434fbd5
-M
-src/practice/lesson3/App.java,6\7\67d593f905b18c3a9e4859b50bae7a1c68eb4f11
+src/ru/levelup/lesson1/HW1.java,c\b\cb8e8f584f6bbcc80d578d61a416acad5e9b6c99
+O
+src/ru/levelup/lesson2/HW2.java,3\d\3df2ab8a1cc463cb13ad8740418bd6b16354a77f
+P
+ src/ru/levelup/lesson2/Loop.java,b\6\b631818c9ce839e6e4692a358a9ad9a92ef8fe2a
+Q
+!src/ru/levelup/lesson3/Point.java,2\5\25bb29e88eaa5a0f46a1d7e920e05a9571faed9e
+V
+&src/ru/levelup/lesson3/Calculator.java,8\4\84d512f6b35f536eedb19e7daccbfa8cf859ece3
+U
+%src/ru/levelup/lesson3/ArrayUtil.java,a\a\aa551b34b71b24df78b107fc00a10a0bd397be7c
+X
+(src/ru/levelup/lesson3/ArraySorting.java,2\e\2edd3337355a66f25488793e8c2d0ab174030009
+O
+src/ru/levelup/lesson3/App.java,f\4\f478ffec9a415eb1809a542436ce44b3639fd56f

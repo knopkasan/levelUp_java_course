@@ -4,7 +4,7 @@ public class ArrayUtil {
 
 
     public static void main(String[] args) {
-        int[] arr = {4, 10, 5 ,7, 3, 0, 15};
+        int[] arr = {4, 10, 5 ,7, 3, 3, 15};
 
         System.out.println(min(arr));
         System.out.println(max(arr));
@@ -15,7 +15,7 @@ public class ArrayUtil {
     // Т.е. в метод min вы передаете массив, а в ответ вам возвращается число,
     // которое является минимум из переданного массива.
     public static int min(int[] array) {
-        int minNum = Integer.MAX_VALUE;
+        int minNum = array[0];
         for (int i = 0; i < array.length; i++) {
             if (array[i] < minNum) {
                 minNum = array[i];
@@ -25,7 +25,7 @@ public class ArrayUtil {
     }
 
     public static int max(int[] array) {
-        int maxNum = 0;
+        int maxNum = array[0];
         for (int i = 0; i < array.length; i++) {
             if (array[i] > maxNum) {
                 maxNum = array[i];
