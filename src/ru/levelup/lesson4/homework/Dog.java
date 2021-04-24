@@ -1,4 +1,4 @@
-package ru.levelup.lesson4;
+package ru.levelup.lesson4.homework;
 
 public class Dog extends Animal{
     String size;

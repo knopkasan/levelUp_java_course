@@ -1,4 +1,4 @@
-package ru.levelup.lesson4;
+package ru.levelup.lesson4.homework;
 
 import java.util.Arrays;
 import java.util.Scanner;

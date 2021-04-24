@@ -1,6 +1,4 @@
-package ru.levelup.lesson4;
-
-import java.util.Arrays;
+package ru.levelup.lesson4.homework;
 
 public class HomeworkTestDrive {
     public static void main(String[] args) {
