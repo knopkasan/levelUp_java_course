@@ -1,8 +1,6 @@
 
 G
 levelUp_java_course.iml,b\4\b4a6ba2bbf683bc8f70d2087c57d9b7cd13b43e4
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 R
 "src/ru/levelup/lesson2/Arrays.java,8\7\877ce0896b02c718d8c16bef479ef4a83e4bd8c2
 W
@@ -35,5 +33,3 @@ Q
 !src/ru/levelup/lesson4/Shape.java,3\3\33c229d8d6e5e8defacaee55741efc6dcff25490
 V
 &src/ru/levelup/lesson4/ObjectCast.java,b\0\b06554555b6f655840b072a0cdf0f48a3b8a924e
-_
-/src/ru/levelup/lesson4/PolymorphismExample.java,e\0\e0269ea05d90ab0ae7035c37967beaf2237c4278

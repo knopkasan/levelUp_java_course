@@ -32,7 +32,7 @@ public class HomeworkTestDrive {
         bigPhone.receiveCall("Таня");
 
         String[] numbers = new String[]{"34567890", "7565467", "00000000"};
-        mobile.sendMessage(numbers);
+        mobile.sendMessage(numbers, "Привет");
 
 
         //Задание 2

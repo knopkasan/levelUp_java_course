@@ -52,9 +52,9 @@ public class Phone {
         System.out.println("Звонит " + name + " с номера телефона " + number);
     }
 
-    public void sendMessage(String[] numbers) {
-        for (String number : numbers ) {
-            System.out.println(number);
+    public void sendMessage(String[] numbers, String message) {
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Send message" + message + "on number" + numbers[i]);
         }
     }
 }
