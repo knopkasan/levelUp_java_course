@@ -32,9 +32,7 @@ public class TestDrive {
         Game[] checkedArray = new Game[os.length];
 
         for (int i = 0; i < os.length; i++) {
-            if (os[i] instanceof Game) {
                 checkedArray[i] = (Game) os[i];
-            }
         }
 
         System.out.println(Arrays.toString(checkedArray));
