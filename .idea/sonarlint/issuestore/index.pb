@@ -19,8 +19,6 @@ V
 &src/ru/levelup/lesson3/Calculator.java,8\4\84d512f6b35f536eedb19e7daccbfa8cf859ece3
 U
 %src/ru/levelup/lesson3/ArrayUtil.java,a\a\aa551b34b71b24df78b107fc00a10a0bd397be7c
-X
-(src/ru/levelup/lesson3/ArraySorting.java,2\e\2edd3337355a66f25488793e8c2d0ab174030009
 O
 src/ru/levelup/lesson3/App.java,f\4\f478ffec9a415eb1809a542436ce44b3639fd56f
 [
@@ -53,3 +51,13 @@ T
 $src/ru/levelup/lesson4/Triangle.java,d\6\d6cca073a9a9b18337d2c9a3c398cf246e5e7e1a
 U
 %src/ru/levelup/lesson4/Rectangle.java,8\5\8568ee999f2bf5903bdb8492932c3a76a6acced4
+O
+src/ru/levelup/lesson5/App.java,c\2\c247da8b1449cb77b743fb8fee4f17b1045a8b14
+Y
+)src/ru/levelup/lesson5/ComparisonApp.java,0\5\05d29e4cbfadc76485eecc5d3e3db42235f840ee
+R
+"src/ru/levelup/lesson5/Laptop.java,c\8\c8b28134270086c64270ebf90fda374882dcea84
+W
+'src/ru/levelup/lesson5/TriplePoint.java,2\d\2dffcf1bd5c637ab1c4d07df2851338fe66c7ae5
+_
+/src/ru/levelup/lesson5/homework/BaseFilter.java,a\e\ae5e8066b701a1746f31f5aef3f5a00fafaa9fb1

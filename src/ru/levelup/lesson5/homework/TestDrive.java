@@ -37,11 +37,10 @@ public class TestDrive {
 
         System.out.println(Arrays.toString(checkedArray));
 
-
-//        System.out.println(checkedArray.getClass().getCanonicalName());
+        //System.out.println(checkedArray.getClass().getName());
 //
-//        int[] arr = new int[3];
+        //int[] arr = new int[3];
 //
-//        System.out.println(arr.getClass().getCanonicalName());
+       // System.out.println(arr.getClass().getName());
     }
 }
