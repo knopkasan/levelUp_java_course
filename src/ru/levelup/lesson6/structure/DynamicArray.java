@@ -1,5 +1,6 @@
 package ru.levelup.lesson6.structure;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Locale;
 
@@ -75,12 +76,5 @@ public class DynamicArray implements Structure {
         return size;
     }
 
-    public boolean isEmpty() {
-        int chk = 0;
-        for (int elem : elements) {
-            if (elem != 0) chk++;
-        }
-        return chk == 0;
-    }
-
-    }
+    public boolean isEmpty() { return size == 0; }
+}
