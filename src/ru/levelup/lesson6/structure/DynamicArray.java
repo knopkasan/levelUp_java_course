@@ -30,6 +30,7 @@ public class DynamicArray implements Structure {
 
         elements[size++] = value;
     }
+
     /**
      * 1 задачка:
      * Написать методы класса DynamicArray.
@@ -46,18 +47,16 @@ public class DynamicArray implements Structure {
     public void removeByValue(int value) {
         for (int i = 0; i < elements.length; i++) {
             if (elements[i] == value) {
-                elements[i] = 0;
+                //array shift
+                System.arraycopy(elements, i + 1, elements, i, elements.length - i - 1);
                 size--;
             }
         }
-        sortArray("desc");
-        //System.out.println(Arrays.toString(elements));
     }
 
     public void removeByIndex(int index) {
-        elements[index] = 0;
+        System.arraycopy(elements, index + 1, elements, index, elements.length - index - 1);
         size--;
-        sortArray("desc");
     }
 
     public void trim() {
@@ -66,7 +65,6 @@ public class DynamicArray implements Structure {
             elements = new int[size];
             System.arraycopy(oldArray, 0, elements, 0, size);
         }
-        //System.out.println(Arrays.toString(elements));
     }
 
     public int get(int index) {
@@ -85,34 +83,4 @@ public class DynamicArray implements Structure {
         return chk == 0;
     }
 
-    public void sortArray(String type) {
-        if (type.toLowerCase().equals("asc")) {
-            int temp = 0;
-            for (int i = 0; i < elements.length - 1; i++ ) {
-                for (int j = i + 1; j < elements.length; j++) {
-                    if (elements[i] > elements[j]) {
-                        temp = elements[i];
-                        elements[i] = elements[j];
-                        elements[j] = temp;
-                    }
-                }
-            }
-        } else if (type.toLowerCase().equals("desc")) {
-            int temp = 0;
-            for (int i = 0; i < elements.length - 1; i++ ) {
-                for (int j = i + 1; j < elements.length; j++) {
-                    if (elements[i] < elements[j]) {
-                        temp = elements[i];
-                        elements[i] = elements[j];
-                        elements[j] = temp;
-                    }
-                }
-            }
-        } else {
-            System.out.println("Введите asc - для сортировки по возрастанию, " +
-                               "desc - для сортировки по убыванию.");
-        }
-
     }
-
-}

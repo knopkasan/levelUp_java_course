@@ -61,3 +61,11 @@ W
 'src/ru/levelup/lesson5/TriplePoint.java,2\d\2dffcf1bd5c637ab1c4d07df2851338fe66c7ae5
 _
 /src/ru/levelup/lesson5/homework/BaseFilter.java,a\e\ae5e8066b701a1746f31f5aef3f5a00fafaa9fb1
+\
+,src/ru/levelup/lesson6/ObjectComparator.java,e\5\e5caa4b71744f0866e8374ce83d3b0a13897eaa8
+U
+%src/ru/levelup/lesson6/Superhero.java,e\2\e2ec04ea20099b91921b01c567c9bf2e9ac8f182
+_
+/src/ru/levelup/lesson6/SuperheroComparator.java,c\1\c11a23b3c96d9b392cd3c0ff4699ee182cc21043
+^
+.src/ru/levelup/lesson5/homework/TestDrive.java,a\3\a33e1deca1d3f69dc3b19d45541e562311a2331f
