@@ -69,3 +69,11 @@ _
 /src/ru/levelup/lesson6/SuperheroComparator.java,c\1\c11a23b3c96d9b392cd3c0ff4699ee182cc21043
 ^
 .src/ru/levelup/lesson5/homework/TestDrive.java,a\3\a33e1deca1d3f69dc3b19d45541e562311a2331f
+b
+2src/ru/levelup/lesson5/homework/FilterService.java,6\5\659c7861d16f4b41775222c9ea32b5cf1f707771
+X
+(src/ru/levelup/lesson3/ArraySorting.java,2\e\2edd3337355a66f25488793e8c2d0ab174030009
+S
+#src/ru/levelup/lesson6/Compare.java,1\0\105f259baf5bb154bd76025cf872a8df996d363e
+Y
+)src/ru/levelup/lesson5/homework/Game.java,1\f\1f46c1abdcabdb0e8aaa313b596e6df0feb1006d

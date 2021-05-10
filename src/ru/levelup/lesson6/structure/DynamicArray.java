@@ -45,6 +45,7 @@ public class DynamicArray implements Structure {
      * getSize() - получение размера списка
      * isEmpty() - возвращает true, если список пуст, иначе false.
      */
+    @Override
     public void removeByValue(int value) {
         for (int i = 0; i < elements.length; i++) {
             if (elements[i] == value) {
@@ -55,11 +56,13 @@ public class DynamicArray implements Structure {
         }
     }
 
+    @Override
     public void removeByIndex(int index) {
         System.arraycopy(elements, index + 1, elements, index, elements.length - index - 1);
         size--;
     }
 
+    @Override
     public void trim() {
         if (size < elements.length) {
             int[] oldArray = elements;
@@ -68,13 +71,16 @@ public class DynamicArray implements Structure {
         }
     }
 
+    @Override
     public int get(int index) {
         return elements[index];
     }
 
+    @Override
     public int getSize() {
         return size;
     }
 
+    @Override
     public boolean isEmpty() { return size == 0; }
 }

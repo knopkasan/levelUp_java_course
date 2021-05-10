@@ -2,6 +2,7 @@ package ru.levelup.lesson6.structure;
 
 
 import java.util.Arrays;
+import java.util.List;
 
 public class StructureApp {
 
@@ -18,5 +19,36 @@ public class StructureApp {
         s.removeByIndex(2);
 
         s.trim();
+
+
+        OneWayList str = new OneWayList();
+        str.addValue(66);
+        str.addValue(2);
+        str.addValue(66);
+        str.addValue(2);
+
+        for(int i = 0; i < str.getSize(); i++) {
+            System.out.println(str.get(i));
+        }
+
+        System.out.println();
+
+      str.removeByValue(2);
+
+        for(int i = 0; i < str.getSize(); i++) {
+            System.out.println(str.get(i));
+        }
+
+        System.out.println();
+
+        str.removeByIndex(1);
+
+        for(int i = 0; i < str.getSize(); i++) {
+            System.out.println(str.get(i));
+        }
+
+
+
+
     }
 }
