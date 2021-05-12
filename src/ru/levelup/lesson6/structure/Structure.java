@@ -1,6 +1,6 @@
 package ru.levelup.lesson6.structure;
 
-public interface Structure {
+public interface Structure extends Iterable<Integer> {
 
     void addValue(int value);
 

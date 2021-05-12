@@ -1,5 +1,7 @@
 package ru.levelup.lesson6.structure;
 
+import java.util.Iterator;
+
 public class OneWayList implements Structure{
 
     private ListElement head;
@@ -35,24 +37,27 @@ public class OneWayList implements Structure{
         //todo: сделать дома
         if (head == null) { //список пустой
             System.out.println("Нет элементов!");
+            return;
         }
-            ListElement currentPointer = head;
-            ListElement previousElement = null;
-            if (currentPointer.getValue() == value) {
-                head = head.getNext();
-            }
 
-            while (currentPointer != null && currentPointer.getValue() != value) {
-                previousElement = currentPointer;
-                currentPointer = currentPointer.getNext();
-            }
+        ListElement currentPointer = head;
+        ListElement previousElement = head;
+        if (currentPointer.getValue() == value) {
+            head = head.getNext();
+            return;
+        }
 
-            if (currentPointer == null) {
-                System.out.println("Такого элемента нет");
-                return;
-            }
-            previousElement = currentPointer.getNext();
-            size--;
+        while (currentPointer != null && currentPointer.getValue() != value) {
+            previousElement = currentPointer;
+            currentPointer = currentPointer.getNext();
+        }
+
+        if (currentPointer == null) {
+            System.out.println("Такого элемента нет");
+            return;
+        }
+        previousElement.setNext(currentPointer.getNext()); //перелинковываем элемент, следующий за искомым
+        size--;
         }
 
     @Override
@@ -63,7 +68,7 @@ public class OneWayList implements Structure{
         }
 
         ListElement elementToBeDeleted = head;
-        ListElement previous = null;
+        ListElement previous = head;
 
         if (index == 0 && elementToBeDeleted != null) {
             this.head = elementToBeDeleted.getNext();
@@ -72,6 +77,7 @@ public class OneWayList implements Structure{
         }
 
         for (int i = 0; elementToBeDeleted != null && i < index - 1; i++) {
+            previous = elementToBeDeleted;
             elementToBeDeleted = elementToBeDeleted.getNext();
         }
 
@@ -80,7 +86,7 @@ public class OneWayList implements Structure{
             return;
         }
 
-        previous = elementToBeDeleted.getNext();
+        previous.setNext(elementToBeDeleted.getNext());
         size--;
     }
 
@@ -113,5 +119,10 @@ public class OneWayList implements Structure{
     @Override
     public boolean isEmpty() {
         return size == 0;
+    }
+
+    @Override
+    public Iterator<Integer> iterator() {
+        return null;
     }
 }

@@ -2,6 +2,7 @@ package ru.levelup.lesson6.structure;
 
 
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class StructureApp {
@@ -21,34 +22,39 @@ public class StructureApp {
         s.trim();
 
 
-        OneWayList str = new OneWayList();
-        str.addValue(66);
-        str.addValue(2);
-        str.addValue(66);
-        str.addValue(2);
+//        OneWayList str = new OneWayList();
+//        str.addValue(66);
+//        str.addValue(2);
+//        str.addValue(66);
+//        str.addValue(2);
+//        str.addValue(2);
+//        str.addValue(4);
+//        str.addValue(2);
+//
+//        for(int i = 0; i < str.getSize(); i++) {
+//            System.out.println(str.get(i));
+//        }
+//
+//        System.out.println();
+//
+//      str.removeByValue(2);
+//
+//        for(int i = 0; i < str.getSize(); i++) {
+//            System.out.println(str.get(i));
+//        }
+//
+//        System.out.println();
+//
+//        str.removeByIndex(5);
+//
+//        for(int i = 0; i < str.getSize(); i++) {
+//            System.out.println(str.get(i));
+//        }
 
-        for(int i = 0; i < str.getSize(); i++) {
-            System.out.println(str.get(i));
+        Iterator<Integer> iter = s.iterator();
+        while (iter.hasNext()) {
+            Integer el = iter.next();
+            System.out.println(el);
         }
-
-        System.out.println();
-
-      str.removeByValue(2);
-
-        for(int i = 0; i < str.getSize(); i++) {
-            System.out.println(str.get(i));
-        }
-
-        System.out.println();
-
-        str.removeByIndex(1);
-
-        for(int i = 0; i < str.getSize(); i++) {
-            System.out.println(str.get(i));
-        }
-
-
-
-
     }
 }

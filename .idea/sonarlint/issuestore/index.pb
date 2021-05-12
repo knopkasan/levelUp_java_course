@@ -77,3 +77,17 @@ S
 #src/ru/levelup/lesson6/Compare.java,1\0\105f259baf5bb154bd76025cf872a8df996d363e
 Y
 )src/ru/levelup/lesson5/homework/Game.java,1\f\1f46c1abdcabdb0e8aaa313b596e6df0feb1006d
+]
+-src/ru/levelup/lesson7/CollectionExample.java,1\7\171c4fc888519ed7568fa8165a5a601785f6fc8a
+Z
+*src/ru/levelup/lesson7/GenericExample.java,7\a\7a2510f7715868d09bb1218aeb76ae973e7b2c91
+[
++src/ru/levelup/lesson6/structure/Stack.java,6\d\6d5a5718ab94264bc239aea507ae301088365b04
+X
+(src/ru/levelup/lesson7/GenericClass.java,8\5\851107aef319e8ee368b3de7d9cd9cfde80c87c7
+_
+/src/ru/levelup/lesson5/homework/GameFilter.java,b\6\b64e6a0c426065bc06fa932b88dabb5611a1cce5
+d
+4src/ru/levelup/lesson7/homework/CollectionInUse.java,7\b\7bffcc2313d99f435912088c089bf2c7af1a99f4
+a
+1src/ru/levelup/lesson6/structure/ListElement.java,1\a\1ac91a876bb5019555ece6c36c3fbdeb182d5166

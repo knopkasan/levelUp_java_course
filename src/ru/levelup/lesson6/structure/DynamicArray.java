@@ -2,6 +2,7 @@ package ru.levelup.lesson6.structure;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Locale;
 
 //динамический массив - список на основе массива
@@ -83,4 +84,13 @@ public class DynamicArray implements Structure {
 
     @Override
     public boolean isEmpty() { return size == 0; }
+
+
+    //класс должен имплементировать интерфейс Iterable. - значит, что по классу можно пройтись итератором
+    //- у класса появляется метод iterator, который возвращает титератор для класса
+    //- класс Iterator - то, как мы будем итерироваться по классу
+    @Override
+    public Iterator<Integer> iterator() {
+        return new DynamicArrayIterator(elements, size);
+    }
 }
