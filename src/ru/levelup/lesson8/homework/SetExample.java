@@ -15,13 +15,22 @@ public class SetExample {
 
     Set<Object> union(Set<Object> set1, Set<Object> set2) {
         Set<Object> result = new HashSet<>(set1);
-        result.addAll(set2);
+        for (Object set : set2) {
+            result.add(set);
+        }
         return result;
     }
 
     Set<Object> intersect(Set<Object> set1, Set<Object> set2) {
-        Set<Object> result = new HashSet<>(set1);
-        result.retainAll(set2);
+        Set<Object> result = new HashSet<>();
+        for (Object userA: set1) {
+            for (Object userB : set2)
+            {
+                if(userA.equals(userB)) {
+                    result.add(userA);
+                }
+            }
+        }
         return result;
     }
 }

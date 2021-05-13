@@ -91,3 +91,17 @@ d
 4src/ru/levelup/lesson7/homework/CollectionInUse.java,7\b\7bffcc2313d99f435912088c089bf2c7af1a99f4
 a
 1src/ru/levelup/lesson6/structure/ListElement.java,1\a\1ac91a876bb5019555ece6c36c3fbdeb182d5166
+P
+ src/ru/levelup/lesson8/Bank.java,0\5\0526bf9aaf139873a1e7bc4b46ab490e0b1d6473
+S
+#src/ru/levelup/lesson8/BankApp.java,4\f\4fcbe84d1742ab9e51f445f2db694673fc714b5b
+\
+,src/ru/levelup/lesson8/CollectionRemove.java,6\b\6b727be34b12e369fdd0303841bebd5fde868ad6
+Z
+*src/ru/levelup/lesson8/HashMapExample.java,f\6\f64d58231dd479ea1fea03e63d34cdc438435d1d
+U
+%src/ru/levelup/lesson8/Iteration.java,5\5\556634e497e875586debb01b14917b0595217ef3
+`
+0src/ru/levelup/lesson6/structure/OneWayList.java,e\2\e2b70d09f5992c7ba5231085eaad9a5187929546
+_
+/src/ru/levelup/lesson6/structure/Structure.java,e\0\e08a3ece8ac4b068ba949ad050a2be87aea3b55a
