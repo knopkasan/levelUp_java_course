@@ -39,12 +39,12 @@ public class TestDrive {
         Set<Object> wowIntersection = ex.intersect(us1, us2);
         Set<Object> wowUnion = ex.union(us1, us2);
 
-        for (Object user : us1) {
+        for (Object user : wowIntersection) {
             System.out.println(user.toString());
         }
         System.out.println();
 
-        for (Object user : us2) {
+        for (Object user : wowUnion) {
             System.out.println(user.toString());
         }
         System.out.println();
