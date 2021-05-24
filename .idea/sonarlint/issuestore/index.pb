@@ -91,10 +91,6 @@ d
 4src/ru/levelup/lesson7/homework/CollectionInUse.java,7\b\7bffcc2313d99f435912088c089bf2c7af1a99f4
 a
 1src/ru/levelup/lesson6/structure/ListElement.java,1\a\1ac91a876bb5019555ece6c36c3fbdeb182d5166
-P
- src/ru/levelup/lesson8/Bank.java,0\5\0526bf9aaf139873a1e7bc4b46ab490e0b1d6473
-S
-#src/ru/levelup/lesson8/BankApp.java,4\f\4fcbe84d1742ab9e51f445f2db694673fc714b5b
 \
 ,src/ru/levelup/lesson8/CollectionRemove.java,6\b\6b727be34b12e369fdd0303841bebd5fde868ad6
 Z
@@ -105,3 +101,22 @@ U
 0src/ru/levelup/lesson6/structure/OneWayList.java,e\2\e2b70d09f5992c7ba5231085eaad9a5187929546
 _
 /src/ru/levelup/lesson6/structure/Structure.java,e\0\e08a3ece8ac4b068ba949ad050a2be87aea3b55a
+b
+2src/ru/levelup/lesson6/structure/DynamicArray.java,2\8\28487cb84e834321e9358b86528febb466c04f4c
+j
+:src/ru/levelup/lesson6/structure/DynamicArrayIterator.java,4\6\465a26e7fbd4cb5f47007947e8a59e7e5fb14759
+_
+/src/ru/levelup/lesson8/homework/SetExample.java,f\4\f40afeef119ce88508a60ac0493da5c05375b442
+Y
+)src/ru/levelup/lesson8/homework/User.java,2\3\23c3cd4d2d3b5acc7a0d8dc92de65b6b8dea05a7
+^
+.src/ru/levelup/lesson8/homework/TestDrive.java,4\0\402d3a5afe948173b9dd80d7cf35caeba51997f1
+b
+2src/ru/levelup/lesson6/structure/StructureApp.java,d\2\d2ad6fd1eabc1792f43b17d7752d38df3b90c6ca
+P
+ src/ru/levelup/lesson8/Bank.java,0\5\0526bf9aaf139873a1e7bc4b46ab490e0b1d6473
+S
+#src/ru/levelup/lesson8/BankApp.java,4\f\4fcbe84d1742ab9e51f445f2db694673fc714b5b
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
