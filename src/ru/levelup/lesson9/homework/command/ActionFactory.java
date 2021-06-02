@@ -1,29 +1,31 @@
 package ru.levelup.lesson9.homework.command;
 
 import ru.levelup.lesson9.homework.command.actions.*;
-import ru.levelup.lesson9.homework.exception.ActionNotFoundException;
-
-import java.util.HashMap;
-import java.util.Map;
+import ru.levelup.lesson9.homework.command.request.*;
+import ru.levelup.lesson9.homework.service.AccountService;
 
 public class ActionFactory {
-    private final Map<ActionType, Action> actionMap;
+    private final AccountService accountService;
 
-    public ActionFactory() {
-        //this.actionMap = new EnumMap<>(ActionType.class);
-        //new EnumMap(...) <- Class<Key>, где key - это enum - <Название нашего enum>.class
-        this.actionMap = new HashMap<>();
-        this.actionMap.put(ActionType.DISPLAY_ACCOUNTS, new DisplayAccountAction());
-        this.actionMap.put(ActionType.CLOSE_ACCOUNT, new CloseAccountAction());
-        this.actionMap.put(ActionType.CREATE_ACCOUNT, new CreateAccountAction());
-        this.actionMap.put(ActionType.UPDATE_ACCOUNT, new UpdateAccountAction());
-    }
+    public ActionFactory(AccountService accountService) { this.accountService = accountService; }
 
-    public Action getAction(ActionType actionType) {
-        Action action = actionMap.get(actionType);
-        if (action == null) {
-            throw new ActionNotFoundException(actionType);
+    public Action create(ActionRequest request) {
+        switch (request.getType()) {
+            case UPDATE_ACCOUNT:
+                UpdateActionRequest updateActionRequest = (UpdateActionRequest) request;
+                return new UpdateAccountAction(accountService, updateActionRequest.getAccountNum(),
+                        updateActionRequest.getBalance());
+            case CREATE_ACCOUNT:
+                CreateActionRequest createActionRequest = (CreateActionRequest) request;
+                return new CreateAccountAction(accountService, createActionRequest.getBankName(),
+                        createActionRequest.getAccountType(), createActionRequest.getAccountNum());
+            case CLOSE_ACCOUNT:
+                CloseActionRequest closeActionRequest = (CloseActionRequest) request;
+                return new CloseAccountAction(accountService, closeActionRequest.getAccountNum());
+            case DISPLAY_ACCOUNTS:
+                DisplayActionRequest displayActionRequest = (DisplayActionRequest) request;
+                return new DisplayAccountAction(accountService, displayActionRequest.getAccountNum());
         }
-        return action;
+        return  null;
     }
 }

@@ -2,14 +2,14 @@ package ru.levelup.lesson9.homework.service;
 
 import ru.levelup.lesson9.homework.domain.Account;
 
-import java.util.Collection;
+import java.util.ArrayList;
 
 public interface AccountService {
-    Collection<Account> LoadAccountList();
+
+    ArrayList<Account> loadAccountList();
 
     Account createAccount(String bankName, String accountType, int accountNum);
 
-    int ReceiveAccountNum();
+    ArrayList<Account> updateAccount(ArrayList<Account> accounts);
 
-    double ReceiveAccountBalance();
 }

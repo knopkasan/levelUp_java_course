@@ -4,19 +4,17 @@ import ru.levelup.lesson9.homework.domain.Account;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 
 public class PlainTextAccountService implements AccountService {
     private static final String ACCOUNTS_FILE_PATH = "accounts.txt";
 
     @Override
-    public Collection<Account> LoadAccountList() {
+    public ArrayList<Account> loadAccountList() {
         try (BufferedReader fileReader =
                      new BufferedReader(new FileReader(ACCOUNTS_FILE_PATH))) {
 
             String line;
-            Collection<Account> accounts = new ArrayList<>();
+            ArrayList<Account> accounts = new ArrayList<>();
             while ((line = fileReader.readLine()) != null) {
                 Account account = parseRawString(line);
                 if (account != null) {
@@ -27,21 +25,23 @@ public class PlainTextAccountService implements AccountService {
             return accounts;
         } catch (IOException ex) {
             System.out.println("Ошибка при чтении файла " + ACCOUNTS_FILE_PATH);
-            return Collections.emptyList();
+            return new ArrayList<>();
         }
     }
 
     @Override
     public Account createAccount(String bankName, String accountType, int accountNum) {
+        Account acc = new Account(bankName, accountType, accountNum);
         try (BufferedWriter fileWriter =
                      new BufferedWriter(new FileWriter(ACCOUNTS_FILE_PATH, true))) {
             //ID%%NAME
-            String line = bankName + "%%" + accountType + "%%" + accountNum;
+            String line = acc.getBankName() + "%%" + acc.getAccountType() + "%%" + acc.getAccountNum() +
+            "%%" + acc.getBalance() + "%%" + acc.getOpenDate();
             fileWriter.write(line);
             fileWriter.newLine();
             fileWriter.flush();
 
-            return new Account(bankName, accountType, accountNum);
+            return acc;
         } catch (IOException ex) {
             System.out.println("Ошибка при записи в файл " + ACCOUNTS_FILE_PATH);
             return null;
@@ -49,13 +49,22 @@ public class PlainTextAccountService implements AccountService {
     }
 
     @Override
-    public int ReceiveAccountNum() {
-        return 0;
-    }
+    public ArrayList<Account> updateAccount(ArrayList<Account> accounts) {
+        try (BufferedWriter fileWriter =
+                     new BufferedWriter(new FileWriter(ACCOUNTS_FILE_PATH, false))) {
+            for ( Account a : accounts ) {
+                String line = a.getBankName() + "%%" + a.getAccountType() + "%%" + a.getAccountNum() +
+                        "%%" + a.getBalance() + "%%" + a.getOpenDate();
+                fileWriter.write(line);
+                fileWriter.newLine();
+            }
+            fileWriter.flush();
 
-    @Override
-    public double ReceiveAccountBalance() {
-        return 0;
+            return accounts;
+        } catch (IOException ex) {
+            System.out.println("Ошибка при записи в файл " + ACCOUNTS_FILE_PATH);
+            return null;
+        }
     }
 
     private Account parseRawString(String rawAccountString) {
