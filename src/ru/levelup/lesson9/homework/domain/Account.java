@@ -16,14 +16,14 @@ public class Account {
     private String openDate;
     private String closeDate;
 
-    public Account(String bankName, String accountType, int accountNum) {
+    public Account(String bankName, String accountType, int accountNum,
+                   double balance, String openDate, String closeDate) {
         this.bankName = bankName;
         this.accountType = accountType;
         this.accountNum = accountNum;
-        this.balance = 0.0;
-        this.openDate = new SimpleDateFormat("dd.MM.yyyy HH:mm:ss")
-                .format(Calendar.getInstance().getTime());
-        closeDate = null;
+        this.balance = balance;
+        this.openDate = openDate;
+        this.closeDate = closeDate;
     }
 
     public String getBankName() {
@@ -56,15 +56,5 @@ public class Account {
 
     public void setBalance(double balance) {
         this.balance = balance;
-    }
-
-    public static Account lookingForAccount(Collection<Account> accounts, int accountNum) {
-        for (Account acc : accounts) {
-            if (acc.getAccountNum() == accountNum) {
-                System.out.printf("Счет %d найден.", accountNum);
-                return acc;
-            }
-        }
-        return null;
     }
 }

@@ -18,7 +18,9 @@ public class ActionFactory {
             case CREATE_ACCOUNT:
                 CreateActionRequest createActionRequest = (CreateActionRequest) request;
                 return new CreateAccountAction(accountService, createActionRequest.getBankName(),
-                        createActionRequest.getAccountType(), createActionRequest.getAccountNum());
+                        createActionRequest.getAccountType(), createActionRequest.getAccountNum(),
+                        createActionRequest.getBalance(), createActionRequest.getOpenDate(),
+                        createActionRequest.getCloseDate());
             case CLOSE_ACCOUNT:
                 CloseActionRequest closeActionRequest = (CloseActionRequest) request;
                 return new CloseAccountAction(accountService, closeActionRequest.getAccountNum());
